@@ -1,0 +1,46 @@
+﻿[
+  {
+    "type": "extension",
+    "frameworkVersion": "1.0.0",
+    "version": "1.0.0",
+    "name": "ystyle",
+    "guid": "{713e14c3-3ccb-468b-92b7-5384ee54509d}",
+    "author": {
+      "name": "东方星痕",
+      "email": "lxy5266@live.com"
+    },
+    "title": {
+      "zh-cn": "B站直播刷点歌弹幕"
+    },
+    "description": {
+      "zh-cn": "设置好后,可以自动刷弹幕。"
+    },
+    "permissions": {
+      "httpRequest": [
+        "live.bilibili.com",
+        "*.bilibili.com",
+        "*.hdslb.com",
+        "127.0.0.1"
+      ],
+      "notifications": true
+    },
+    "actions": [
+      {
+        "type": "script",
+        "title": {
+          "zh-cn": "B站直播刷点歌弹幕"
+        },
+        "name": "insertjs",
+        "entryPoints": [
+          "doc_end"
+        ],
+        "include": [
+          "live.bilibili.com"
+        ],
+        "js": [
+          "js/insert.js"
+        ]
+      }
+    ]
+  }
+]
