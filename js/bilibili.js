@@ -10,6 +10,7 @@ var startSend = function(){
     }
     showMsg("启动星痕点歌插件...");
     second = $("#second").val();
+    second = !isNaN(second) && second < 10 ? 10 : second ;
     sendMsg(msg);
     timeout_id = setInterval(function(){
         sendMsg(msg);
