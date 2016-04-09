@@ -21,7 +21,7 @@ var startSend = function(){
 var sendMsg = function (msg) {
     $.post(
         "http://live.bilibili.com/msg/send",
-            { color:16777215,fontsize:25,mode:1,msg:msg,rnd:new Date().getTime(),roomid:ROOMID }
+            { color:16738408,fontsize:25,mode:1,msg:msg,rnd:new Date().getTime(),roomid:ROOMID }
         );
     showMsg("发送点歌<<"+msg+">>消息成功. ");
 }
