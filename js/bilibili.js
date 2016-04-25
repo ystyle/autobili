@@ -14,14 +14,13 @@ var startSend = function() {
         showMsg("点歌插件已启动, 换歌名请先关闭插件.");
         return;
     }
-    showMsg("启动星痕点歌插件...");
     second = $("#second").val();
     second = !isNaN(second) && second < 10 ? 10 : second;
+    showMsg("启动星痕点歌插件...点歌插件id为:" + timeout_id + ", 每隔" + second + "秒会发送一条点歌消息");
     sendMsg(msg);
     timeout_id = setInterval(function() {
         sendMsg(msg);
     }, second * 1000);
-    showMsg("点歌插件id为:" + timeout_id + ", 每隔" + second + "秒会发送一条点歌消息");
 }
 
 /**
