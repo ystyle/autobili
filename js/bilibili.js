@@ -30,8 +30,7 @@ var startSend = function() {
  * @return {[type]}     [description]
  */
 var sendMsg = function(msg) {
-    $.post(
-        "http://live.bilibili.com/msg/send", {
+    $.post("http://live.bilibili.com/msg/send", {
             color: 16777215,
             fontsize: 25,
             mode: 1,
@@ -104,5 +103,5 @@ var AddButton = function() {
 
 // 初始化界面
 AddButton();
-// 签到 
+// 签到
 sign();
