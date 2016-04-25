@@ -104,5 +104,5 @@ var AddButton = function() {
 
 // 初始化界面
 AddButton();
-// 签到
+// 签到 
 sign();
