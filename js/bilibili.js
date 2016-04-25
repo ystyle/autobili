@@ -1,5 +1,6 @@
 var msg = "点歌 魔都";
 var second = 10;
+var min_second = 10;
 var timeout_id;
 var isSign = false;
 window.Notification.requestPermission();
@@ -15,7 +16,7 @@ var startSend = function() {
         return;
     }
     second = $("#second").val();
-    second = !isNaN(second) && second < 10 ? 10 : second;
+    second = !isNaN(second) && second < min_second ? min_second : second;
     showMsg("启动星痕点歌插件...点歌插件id为:" + timeout_id + ", 每隔" + second + "秒会发送一条点歌消息");
     sendMsg(msg);
     timeout_id = setInterval(function() {
