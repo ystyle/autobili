@@ -31,7 +31,7 @@ var startSend = function() {
  */
 var sendMsg = function(msg) {
     $.post("http://live.bilibili.com/msg/send", {
-            color: 16777215,
+            color: 16738408,
             fontsize: 25,
             mode: 1,
             msg: msg,
