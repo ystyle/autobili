@@ -35,7 +35,7 @@ var sendMsg = function(msg) {
             fontsize: 25,
             mode: 1,
             msg: msg,
-            rnd: new Date().getTime(),
+            rnd: parseInt(new Date().getTime()/1000),
             roomid: ROOMID
         }
     );
