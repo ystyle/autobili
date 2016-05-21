@@ -4,7 +4,7 @@ var min_second = 10;
 var timeout_id;
 var isSign = false;
 window.Notification.requestPermission();
-
+var color = 16738408;
 /**
  * 创建自动弹幕任务
  * @return {[type]} [description]
@@ -31,7 +31,7 @@ var startSend = function() {
  */
 var sendMsg = function(msg) {
     $.post("http://live.bilibili.com/msg/send", {
-            color: 16738408,
+            color: color,
             fontsize: 25,
             mode: 1,
             msg: msg,
